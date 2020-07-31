@@ -1,0 +1,2 @@
+/static/:path /static/:path 200
+* /.netlify/functions/server 200
