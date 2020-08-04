@@ -14,6 +14,6 @@ module.exports = {
     path: path.join(cwd, 'build/app/static')
   },
   entry: {
-    appClient: path.join(cwd, '/app/appClient.tsx')
+    client: path.join(cwd, '/app/client.tsx')
   }
 }

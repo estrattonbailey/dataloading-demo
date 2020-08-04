@@ -1,5 +1,6 @@
 import React from 'react'
 import wait from 'w2t'
+import { Link } from 'react-router-dom'
 
 import { useDataloader } from '@/lib/dataloader'
 
@@ -31,9 +32,10 @@ export function Nav () {
   return (
     <ul className="f aic p1">
       {result.items.map(item => (
-        <li className="p1" key={item.label}>{item.label}</li>
+        <li className="p1" key={item.label}>
+          <Link to={item.href}>{item.label}</Link>
+        </li>
       ))}
     </ul>
   )
 }
-

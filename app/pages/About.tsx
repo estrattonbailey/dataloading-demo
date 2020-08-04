@@ -9,7 +9,7 @@ export function Page () {
   const { loading, result } = useDataloader(async () => {
     await wait(100)
     return {
-      title: 'Home page'
+      title: 'About page'
     }
   }, [], {
     key: 'index'
