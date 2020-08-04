@@ -2,12 +2,7 @@
   publish = "./build/app"
   functions = "./build/functions"
 
-# [[redirects]]
-#   from = "/static/:path"
-#   to = "/static/:path"
-#   status = 200
-
-# [[redirects]]
-#   from = "/*"
-#   to = "/.netlify/functions/server"
-#   status = 200
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200

@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:watch": "NODE_ENV=development rm -rf build && webpack -w",
+    "dev:watch": "NODE_ENV=development webpack -w",
     "dev:serve": "NODE_ENV=development netlify dev -p 3000",
-    "prod:build": "NODE_ENV=production rm -rf build && webpack && npm run copy",
-    "copy": "cp _redirects build/app/_redirects"
+    "prod:build": "NODE_ENV=production webpack && npm run copy"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "lur": "^1.0.2",
     "react": "^16.13.1",
@@ -33,6 +32,7 @@
     "@types/react-router-dom": "^5.1.5",
     "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
+    "netlify-cli": "^2.59.0",
     "read-env": "^2.0.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"

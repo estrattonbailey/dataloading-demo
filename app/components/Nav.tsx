@@ -18,8 +18,8 @@ export function Nav () {
           href: '/about'
         },
         {
-          label: 'Contact',
-          href: '/contact'
+          label: 'Products',
+          href: '/products'
         },
       ]
     }

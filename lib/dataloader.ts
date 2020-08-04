@@ -19,7 +19,7 @@ export const initialData: object =
 
 let id = 0;
 let reqs: string[] = [];
-let cache = lur(10, initialData);
+let cache = lur(100, initialData);
 
 /*
  * SERVER
