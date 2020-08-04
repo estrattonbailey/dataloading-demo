@@ -6,7 +6,7 @@
   "scripts": {
     "dev:watch": "NODE_ENV=development webpack -w",
     "dev:serve": "NODE_ENV=development netlify dev -p 3000",
-    "prod:build": "NODE_ENV=production webpack && npm run copy"
+    "prod:build": "NODE_ENV=production webpack"
   },
   "keywords": [],
   "author": "",
