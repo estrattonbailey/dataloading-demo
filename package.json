@@ -7,7 +7,7 @@
     "dev:watch": "NODE_ENV=development rm -rf build && webpack -w",
     "dev:serve": "NODE_ENV=development netlify dev -p 3000",
     "prod:build": "NODE_ENV=production rm -rf build && webpack && npm run copy",
-    "copy": "cp _redirects build/_redirects"
+    "copy": "cp _redirects build/app/_redirects"
   },
   "keywords": [],
   "author": "",

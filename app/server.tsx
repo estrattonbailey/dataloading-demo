@@ -6,7 +6,7 @@ import { html } from '@/app/util/html'
 import { App } from '@/app/App'
 
 export async function handler (ev: any, ctx: any) {
-  const context =  {}
+  const context = {}
   const markup = await render((
     <Router location={ev.path} context={context}>
       <App />
